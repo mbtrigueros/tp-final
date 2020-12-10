@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@300&display=swap");
 h2, h3, h4, h5, h6, h1 {
-  color: #3772ff;
+  color: #b37ba4;
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
 }
 
 h1 {
-  color: #df2935;
+  color: #fdca40;
 }
 
 body {
-  color: #080708;
+  color: #313638;
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 textarea, input {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
-  border-color: #e6e8e6;
+  border-color: #e8e9eb;
   border: 0.5%;
   border-style: solid;
   border-radius: 3%;
@@ -31,9 +31,9 @@ textarea, input {
   font-size: 1.3rem;
   padding: 8%;
   margin: 2%;
-  color: #e6e8e6;
+  color: #e8e9eb;
   text-transform: uppercase;
-  background-color: #df2935;
+  background-color: #fdca40;
 }
 
 * {
@@ -95,11 +95,11 @@ nav ul li a {
 nav ul li a:hover {
   opacity: 60%;
   text-decoration: none;
-  color: #080708;
+  color: #313638;
 }
 
 header {
-  background-color: #fdca40;
+  background-color: #b37ba4;
   height: auto;
   width: 100%;
 }
@@ -111,7 +111,7 @@ header h1 ul {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  color: #080708;
+  color: #313638;
   height: auto;
   width: 100%;
 }
@@ -130,11 +130,11 @@ header h1 ul li .nav-item {
 .navbar-light .navbar-brand {
   margin-right: 11rem;
   font-size: 2.5rem;
-  color: #df2935;
+  color: #fdca40;
   font-family: "Poppins", sans-serif;
 }
 .navbar-light .navbar-brand:hover {
-  color: #3772ff;
+  color: #b37ba4;
   opacity: 60%;
 }
 
@@ -242,7 +242,7 @@ input {
   transition: border-color 0.5s;
 }
 input:hover {
-  border-color: #df2935;
+  border-color: #fdca40;
 }
 
 /* TEXTAREA*/
@@ -250,7 +250,7 @@ textarea {
   transition: border-color 0.5s;
 }
 textarea:hover {
-  border-color: #df2935;
+  border-color: #fdca40;
 }
 
 /* BOTON*/
@@ -258,7 +258,7 @@ textarea:hover {
   transition: background-color 0.5s;
 }
 .formulario__boton:hover {
-  background-color: #e6e8e6;
-  color: #df2935;
-  border-color: #df2935;
+  background-color: #e8e9eb;
+  color: #fdca40;
+  border-color: #fdca40;
 }
