@@ -1,0 +1,36 @@
+%titulos {
+    color: $colorTitulos;
+    font-family: $fuenteTitulos;
+    font-size: $tmTitulos;
+}
+
+%tituloDestacado {
+    @extend %titulos;
+    color: $colorDestacado;
+}
+
+%textos {
+    color: $colorTextos;
+    font-size: $tmTextos;
+    font-family: $fuenteTextos;
+}
+
+%contacto {
+    font-family: $fuenteTextos;
+    font-size: $tmFormulario;
+    border-color: $colorFondo;
+    border: 0.5%;
+    border-style: solid;
+    border-radius: 3%;
+    padding: 2%;
+}
+
+%boton {
+    font-family: $fuenteTitulos;
+    font-size: $tmFormulario;
+    padding: 8%;
+    margin:2%;
+    color: $colorFondo;
+    text-transform: uppercase;
+    background-color: $colorDestacado;
+}

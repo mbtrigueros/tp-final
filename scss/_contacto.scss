@@ -1,0 +1,55 @@
+.contacto__flex {
+    margin: 1% 20%;
+    @include flex(row, space-evenly, center);
+    // grid-area: contacto;
+        p {
+    display: flex;
+    margin-right: 10%;
+        form {
+            display: flex;
+            margin-right: 10%;
+        }
+    }
+}
+
+.formulario__flex {
+    @include flex (column, space-evenly, center);
+}
+
+fieldset {
+    @include flex (column, space-evenly, center);
+    border: none;
+}
+
+                                                        /* INPUT*/
+
+input {
+    @extend %contacto;
+    transition: border-color 0.5s;
+        &:hover{
+            border-color:$colorDestacado;
+        }
+}
+
+                                                        /* TEXTAREA*/
+
+textarea {
+    @extend %contacto;
+    transition: border-color 0.5s;
+        &:hover {
+        border-color: $colorDestacado;
+    }
+}
+
+                                                        /* BOTON*/
+
+.formulario__boton {
+    @extend %boton;
+    transition: background-color 0.5s;
+        &:hover {
+            background-color: $colorFondo;
+            color: $colorDestacado;
+            border-color: $colorDestacado;
+    }
+}
+
