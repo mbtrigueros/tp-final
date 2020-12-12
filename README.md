@@ -6,4 +6,4 @@ Lenguajes utilizados:
 - CSS
 - SCSS
 
-Para ver la página, hace click <acá>
+Para ver la página, hace click [acá](https://mbtrigueros.github.io/tp-final-coder/)
