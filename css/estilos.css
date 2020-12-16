@@ -49,7 +49,17 @@ textarea, input {
   margin: auto;
 }
 
+.index__centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 h1 {
+  font-size: 4rem;
   margin: 1%;
   padding: 0.5%;
   text-align: center;
@@ -128,6 +138,7 @@ header h1 ul li .nav-item {
 }
 
 .navbar-light .navbar-brand {
+  text-transform: uppercase;
   margin-right: 11rem;
   font-size: 2rem;
   color: #fdca40;
