@@ -82,7 +82,6 @@ body {
 
 li {
   list-style: none;
-  margin: 2%;
 }
 @media screen and (max-width: 768px) {
   li {
@@ -99,11 +98,13 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  padding: 2%;
 }
 
 nav ul {
   display: flex;
+}
+nav ul li {
+  margin: 2%;
 }
 nav ul li a {
   transition: opacity 0.2s;
@@ -221,6 +222,41 @@ footer .footer__flex h2 ul .footer__iconos {
 .gap {
   grid-column-gap: 0%;
   grid-row-gap: 2.5%;
+}
+
+.galeria ul {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30vw 36vw;
+  grid-template-rows: 15% 15%;
+  margin: 1%;
+  grid-gap: 1%;
+  grid-template-areas: "foto3 foto1" "foto2 foto2";
+}
+.galeria ul .img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: foto1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.galeria ul .img2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: foto2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria ul .img3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contacto__flex {

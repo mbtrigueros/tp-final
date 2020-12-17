@@ -45,7 +45,6 @@ body {
 
 li {
     list-style: none; 
-    margin: 2%;
     @media screen and (max-width: 768px) {
         font-size: 1.1rem;
         margin: 1.2%;
@@ -60,13 +59,13 @@ a {
 img {
     max-width: 100%;
     height: auto;
-    padding: 2%;
 }
 
 nav {
     ul {
         display: flex;
         li {
+            margin:2%;
             a {
         transition: opacity 0.2s;
             &:hover {

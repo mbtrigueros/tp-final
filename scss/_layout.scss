@@ -123,3 +123,40 @@ footer {
     grid-column-gap: 0%;
     grid-row-gap: 2.5%;
 }
+
+// GALERIA
+
+.galeria 
+    ul {
+    display: grid;
+    justify-content: center;
+    // align-items: center;
+    grid-template-columns: 30vw 36vw;
+    grid-template-rows: 15% 15%;
+    margin: 1%;
+    grid-gap: 1%;
+    
+    grid-template-areas: 
+    "foto3 foto1"
+    "foto2 foto2";
+        .img1 {
+            grid-area: foto1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%; 
+        }
+        .img2 {
+            grid-area: foto2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .img3 {
+            grid-area: foto3;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+} 
