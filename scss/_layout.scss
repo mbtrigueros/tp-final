@@ -73,18 +73,23 @@ footer {
     grid-area: footer;
     .footer__flex {
             @include flex(row, space-evenly, center);
-            h2 {
+            p {
             margin-right: 10%;
+            font-size: 1.1rem;
                 ul  {
                     .footer__iconos{
                         @include flex(row, space-evenly, center);
                         margin-left: 15%;
-                }
-            }
+                        li{
+                        font-size: 0.5rem;    
+                        }
+                    
+            }   }
         
         }
     }
 }
+
 
 
 //ANIMACIONES INDEX

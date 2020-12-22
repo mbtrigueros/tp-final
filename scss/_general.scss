@@ -61,7 +61,12 @@ li {
 a {
     color: inherit;
     text-decoration: none;
-}
+    transition: opacity 0.5s;
+    &:hover {
+        opacity: 60%;
+        text-decoration: none;
+        color: $colorTextos;
+} }
 
 img {
     max-width: 100%;
@@ -74,7 +79,7 @@ nav {
         li {
             margin:2%;
             a {
-        transition: opacity 0.2s;
+        transition: opacity 0.5s;
             &:hover {
                 opacity: 60%;
                 text-decoration: none;
