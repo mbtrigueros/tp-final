@@ -12,19 +12,6 @@
     
 }
 
-.index__centro {
-    @include flex(column, center, center);
-    height: 100vh;
-    text-align: center;
-
-}
-
-// .index__centro {
-//     @include flex(column, center, center);
-//     text-align: center;
-
-// }
-
 h1 {
     @extend %tituloDestacado;
     font-size: 4rem;
