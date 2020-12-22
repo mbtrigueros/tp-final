@@ -18,6 +18,13 @@
     text-align: center;
 
 }
+
+// .index__centro {
+//     @include flex(column, center, center);
+//     text-align: center;
+
+// }
+
 h1 {
     @extend %tituloDestacado;
     font-size: 4rem;
@@ -72,7 +79,6 @@ nav {
                 opacity: 60%;
                 text-decoration: none;
                 color: $colorTextos;
-                scale: 75%;
                 }
             }
         }
