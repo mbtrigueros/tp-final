@@ -39,9 +39,16 @@
                 "header"
                 "intro"
                 "imagen"
-                "footer"
-            }
+                "footer";
+                header{
+                    nav {
+                    ul {
+                        margin: 1%;
+                    }
+                }
+            } 
         }
+    }
 
 .section__imagen { 
     grid-area: imagen;

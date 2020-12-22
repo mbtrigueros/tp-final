@@ -165,6 +165,9 @@ nav ul li a:hover {
     grid-column-gap: 1%;
     grid-template-areas: "header" "intro" "imagen" "footer";
   }
+  .grid__inicio header nav ul {
+    margin: 1%;
+  }
 }
 
 .section__imagen {
