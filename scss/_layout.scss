@@ -32,7 +32,16 @@
         "header header"
         "intro imagen"
         "footer footer"
-}
+        {} 
+            @media screen and (max-width: 768px) {
+                @include grid(100%, auto auto auto auto, 2.5%, 1%);
+                grid-template-areas: 
+                "header"
+                "intro"
+                "imagen"
+                "footer"
+            }
+        }
 
 .section__imagen { 
     grid-area: imagen;

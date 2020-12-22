@@ -156,6 +156,16 @@ nav ul li a:hover {
   grid-column-gap: 1%;
   grid-template-areas: "header header" "intro imagen" "footer footer";
 }
+@media screen and (max-width: 768px) {
+  .grid__inicio {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 2.5%;
+    grid-column-gap: 1%;
+    grid-template-areas: "header" "intro" "imagen" "footer";
+  }
+}
 
 .section__imagen {
   -ms-grid-row: 3;
@@ -230,6 +240,27 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
+}
+
+@media screen and (max-width: 768px){
+  .section__imagen {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .section__intro {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  footer {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
 }
 footer .footer__flex {
   display: flex;
