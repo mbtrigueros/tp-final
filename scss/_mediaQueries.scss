@@ -1,0 +1,72 @@
+// GENERAL
+
+h1{
+    @media screen and (max-width: 768px) {
+    font-size: $tmDestacadoMQ;
+    }
+}
+
+h2,h3,h4,h5,h6 {
+    @media screen and (max-width: 768px) {
+    font-size: $tmTitulosMQ;
+    }
+}
+
+p {
+    @media screen and (max-width: 768px) {
+    font-size: $tmTextosMQ;
+    }
+}
+
+// INICIO
+
+.grid__inicio {
+    @media screen and (max-width: 768px) {
+        @include grid(100%, auto auto auto auto, 2.5%, 1%);
+        grid-template-areas: 
+        "header"
+        "intro"
+        "imagen"
+        "footer";
+        header{
+            nav {
+            ul {
+                margin: 1%;
+                
+                }
+            }
+        }
+    }
+}
+
+// ILUSTRACIONES
+
+// GALERIA
+
+.galeria
+    ul {
+    @media screen and (max-width: 768px) {
+            grid-template-columns: 70vw;
+            grid-template-rows: 15% 15% 15%;
+            margin: 3%;
+            grid-gap: 1%;
+            grid-template-areas: 
+    "foto3"
+    "foto1"
+    "foto2";
+    }
+}
+
+// FORMULARIO
+
+input {
+    @media screen and (max-width: 768px) {
+    font-size: $tmFormularioMQ;
+    }
+}
+
+textarea {
+    @media screen and (max-width: 768px) {
+        font-size: $tmFormularioMQ;
+        }
+}

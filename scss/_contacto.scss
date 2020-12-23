@@ -25,6 +25,7 @@ fieldset {
 
 input {
     @extend %contacto;
+    background-color: $colorHeader;
     transition: border-color 0.5s;
         &:hover{
             border-color:$colorDestacado;
@@ -35,6 +36,7 @@ input {
 
 textarea {
     @extend %contacto;
+    background-color: $colorHeader;
     transition: border-color 0.5s;
         &:hover {
         border-color: $colorDestacado;
