@@ -1,18 +1,32 @@
 // GENERAL
 
 h1{
+    a {
     @media screen and (max-width: 768px) {
     font-size: $tmDestacadoMQ;
     }
-}
+} } 
 
-h2,h3,h4,h5,h6 {
+
+h2 {
     @media screen and (max-width: 768px) {
     font-size: $tmTitulosMQ;
     }
 }
 
+h3, h4, h5, h6 {
+    @media screen and (max-width: 768px) {
+    font-size: $tmSubTitulosMQ;
+    }
+}
+
 p {
+    @media screen and (max-width: 768px) {
+    font-size: $tmTextosMQ;
+    }
+}
+
+li { 
     @media screen and (max-width: 768px) {
     font-size: $tmTextosMQ;
     }

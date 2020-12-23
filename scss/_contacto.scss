@@ -1,19 +1,30 @@
+.grid__contacto {
+    // height: 0vh;
+    @include grid(repeat(2, 1fr), 1fr auto 0.5fr, 2.5%, 0%);
+    grid-template-areas:
+        "header header"
+        "contacto formulario"
+        "footer footer"
+    }
+
+
+
+
 .contacto__flex {
-    margin: 1% 20%;
-    @include flex(row, space-evenly, center);
-    // grid-area: contacto;
-        p {
-    display: flex;
+    grid-area: contacto;
+    margin: 2% 20%;
     margin-right: 10%;
-        form {
-            display: flex;
-            margin-right: 10%;
-        }
+        p {
+    margin: auto;
+
     }
 }
 
-.formulario__flex {
-    @include flex (column, space-evenly, center);
+form {
+    display: flex;
+    margin-top:2%;
+    margin-right: 10%;
+    grid-area: formulario;    
 }
 
 fieldset {
