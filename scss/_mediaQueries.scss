@@ -71,6 +71,27 @@ li {
     }
 }
 
+// CONTACTO
+
+.grid__contacto {
+    @media screen and (max-width: 768px) {
+    @include grid(100%, auto auto auto auto, 2.5%, 0%);
+    grid-template-areas:
+        "header"
+        "contacto" 
+        "formulario"
+        "footer";
+
+        .contacto__flex {
+            margin: auto;
+            }
+            
+        form {
+            margin:auto;    
+        }
+    }
+}
+
 // FORMULARIO
 
 input {
