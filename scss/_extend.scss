@@ -38,6 +38,7 @@
 
 %barras {
     background-color: $colorTitulos;
+    margin: auto;
     width: 30%;
     height: 5%;
     border: solid;
@@ -45,24 +46,3 @@
     z-index: 0;
 }
 
-%barra100 {
-    background-color: $colorTextos;
-}
-
-%barra90 {
-    background-color: $colorTextos;
-    z-index: 1;
-    width: 90%; 
-}
-
-%barra80 {
-    background-color: $colorTextos;
-    z-index: 1;
-    width: 80%; 
-}
-
-%barra70 {
-    background-color: $colorTextos;
-    z-index: 1;
-    width: 70%; 
-}

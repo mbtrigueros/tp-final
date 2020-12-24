@@ -141,3 +141,24 @@ footer {
             }    
     }   }
 }
+
+// BIO
+
+.grid__bio {
+    @media screen and (max-width: 767px) {
+        @include grid(100%, auto auto auto auto auto auto auto, 2.5%, 1%);
+        grid-template-areas: 
+        "header"
+        "bio"
+        "imagen"
+        "habilidades"
+        "ilustracion"
+        "desarrollo"
+        "footer";
+        .section__bio {
+            margin: auto;
+        }
+
+    }
+
+}
