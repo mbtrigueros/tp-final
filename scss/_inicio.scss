@@ -1,5 +1,5 @@
 .grid__inicio {
-    height: 100vh;
+    height: 92vh;
     @include grid(repeat(2, 1fr), 1fr auto 0.5fr, 2.5%, 1%);
     grid-template-areas:
         "header header"

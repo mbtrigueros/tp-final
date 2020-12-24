@@ -245,8 +245,45 @@ footer .footer__flex p ul .footer__iconos {
   grid-area: foot;
 }
 
+.galeria ul {
+  display: grid;
+  grid-template-columns: 30vw 36vw;
+  grid-template-rows: 15% 15%;
+  grid-row-gap: 1%;
+  grid-column-gap: 1%;
+  justify-content: center;
+  margin: 1%;
+  grid-template-areas: "foto3 foto1" "foto2 foto2";
+}
+.galeria ul .img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: foto1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.galeria ul .img2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: foto2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 1%;
+}
+.galeria ul .img3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .grid__inicio {
-  height: 100vh;
+  height: 92vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr auto 0.5fr;
@@ -298,43 +335,6 @@ footer .footer__flex p ul .footer__iconos {
     transform: translateX(0%);
   }
 }
-.galeria ul {
-  display: grid;
-  grid-template-columns: 30vw 36vw;
-  grid-template-rows: 15% 15%;
-  grid-row-gap: 1%;
-  grid-column-gap: 1%;
-  justify-content: center;
-  margin: 1%;
-  grid-template-areas: "foto3 foto1" "foto2 foto2";
-}
-.galeria ul .img1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: foto1;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.galeria ul .img2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: foto2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 1%;
-}
-.galeria ul .img3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: foto3;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .grid__bio {
   height: 100vh;
   display: grid;
@@ -467,7 +467,7 @@ footer .footer__flex p ul .footer__iconos {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr auto 0.5fr;
+  grid-template-rows: 0.4fr auto 0.2fr;
   grid-row-gap: 2.5%;
   grid-column-gap: 0%;
   grid-template-areas: "header header" "contacto formulario" "footer footer";
