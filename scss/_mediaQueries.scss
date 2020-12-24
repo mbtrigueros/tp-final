@@ -20,32 +20,33 @@ h3, h4, h5, h6 {
     }
 }
 
+li {
+    font-size: $tmTextosMQ;
+}
+
 p {
     @media screen and (max-width: 767px) {
     font-size: $tmTextosMQ;
     }
 }
 
-li { 
+nav {
+    ul{
+        li { 
     @media screen and (max-width: 767px) {
     font-size: $tmTextosMQ;
-    }
-}
-
-header{
-    nav {
-    ul {
-        margin: 1%;
-        
+    margin:1%;
+            }
         }
     }
 }
+
 
 // INDEX
 
 .grid__index {
     @media screen and (max-width: 767px) {
-    @include grid(100%, auto auto 6%, 2.5%, 1%);
+    @include grid(100%, auto auto 5%, 2.5%, 1%);
     grid-template-areas:
     "head"
     "p"
@@ -57,7 +58,8 @@ header{
 
 .grid__inicio {
     @media screen and (max-width: 767px) {
-        @include grid(100%, auto auto auto auto, 2.5%, 1%);
+        height: 100vh;
+        @include grid(100%, 10% auto auto 5%, 2.5%, 1%);
         grid-template-areas: 
         "header"
         "intro"
@@ -94,7 +96,7 @@ header{
 
 .grid__contacto {
     @media screen and (max-width: 767px) {
-    @include grid(100%, auto auto auto auto, 2.5%, 1%);
+    @include grid(100%, 10% auto auto 5%, 2.5%, 1%);
     grid-template-areas:
         "header"
         "contacto" 
@@ -129,24 +131,17 @@ textarea {
 
 footer {
     @media screen and (max-width: 767px) {
-        div {
-            p {
-                display:none;
-            }
-            nav {
-                ul {
-                    position: relative;
-                    top: 35%;
-                }
-            }    
-    }   }
+        .footer__flex {
+            position: relative;
+        }
+}
 }
 
 // BIO
 
 .grid__bio {
     @media screen and (max-width: 767px) {
-        @include grid(100%, auto auto auto auto auto auto auto, 2.5%, 1%);
+        @include grid(100%, 10% auto auto auto auto auto 5%, 2.5%, 1%);
         grid-template-areas: 
         "header"
         "bio"
