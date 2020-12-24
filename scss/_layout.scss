@@ -21,7 +21,7 @@
     font-style: italic;
 }
 .footer__index {
-    height: 10vh;
+    height: 100%;
     grid-area:foot;
 }
 
@@ -154,4 +154,108 @@ footer {
             height: 100%;
             object-fit: cover;
         }
+}
+
+// BIO
+
+
+.PS {
+    @extend %barras;
+    .PS-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje90;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 90%;
+    }
+}
+
+.AI {
+    @extend %barras;
+    .AI-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+.SAI {
+    @extend %barras;
+    .SAI-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje100;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 100%;
+    }
+}
+
+.HT {
+    @extend %barras;
+    .HT-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+.CS {
+    @extend %barras;
+    .CS-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+.SS {
+    color: $colorDestacado;
+    @extend %barras;
+    .SS-por {
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+// ANIMACION PORCENTAJES
+
+@keyframes porcentaje100 {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes porcentaje90 {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes porcentaje80 {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 80%;
+    }
 }

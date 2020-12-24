@@ -35,3 +35,34 @@
     text-transform: uppercase;
     background-color: $colorDestacado;
 }
+
+%barras {
+    background-color: $colorTitulos;
+    width: 30%;
+    height: 5%;
+    border: solid;
+    border-color: $colorDestacado;
+    z-index: 0;
+}
+
+%barra100 {
+    background-color: $colorTextos;
+}
+
+%barra90 {
+    background-color: $colorTextos;
+    z-index: 1;
+    width: 90%; 
+}
+
+%barra80 {
+    background-color: $colorTextos;
+    z-index: 1;
+    width: 80%; 
+}
+
+%barra70 {
+    background-color: $colorTextos;
+    z-index: 1;
+    width: 70%; 
+}

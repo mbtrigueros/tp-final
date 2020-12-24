@@ -32,6 +32,27 @@ li {
     }
 }
 
+header{
+    nav {
+    ul {
+        margin: 1%;
+        
+        }
+    }
+}
+
+// INDEX
+
+.grid__index {
+    @media screen and (max-width: 767px) {
+    @include grid(100%, auto auto 6%, 2.5%, 1%);
+    grid-template-areas:
+    "head"
+    "p"
+    "foot"
+    }
+}
+
 // INICIO
 
 .grid__inicio {
@@ -42,14 +63,6 @@ li {
         "intro"
         "imagen"
         "footer";
-        header{
-            nav {
-            ul {
-                margin: 1%;
-                
-                }
-            }
-        }
     }
 }
 
@@ -81,7 +94,7 @@ li {
 
 .grid__contacto {
     @media screen and (max-width: 767px) {
-    @include grid(100%, auto auto auto auto, 2.5%, 0%);
+    @include grid(100%, auto auto auto auto, 2.5%, 1%);
     grid-template-areas:
         "header"
         "contacto" 
@@ -110,4 +123,21 @@ textarea {
     @media screen and (max-width: 767px) {
         font-size: $tmFormularioMQ;
         }
+}
+
+// FOOTER
+
+footer {
+    @media screen and (max-width: 767px) {
+        div {
+            p {
+                display:none;
+            }
+            nav {
+                ul {
+                    position: relative;
+                    top: 35%;
+                }
+            }    
+    }   }
 }
