@@ -21,7 +21,9 @@ h3, h4, h5, h6 {
 }
 
 li {
+    @media screen and (max-width: 767px) {
     font-size: $tmTextosMQ;
+    }
 }
 
 p {
@@ -96,35 +98,34 @@ nav {
 
 .grid__contacto {
     @media screen and (max-width: 767px) {
-    @include grid(100%, 10% auto auto 5%, 2.5%, 1%);
+    @include grid(100%, 10% auto 5%, 2.5%, 1%);
+    height: 100vh;
     grid-template-areas:
         "header"
         "contacto" 
-        "formulario"
         "footer";
-
+        .contacto__cuadro {
+            @include flex(column,center,center);
+        }
         .contacto__flex {
             margin: auto;
             }
+            form {
+                margin: auto;
+                input {
+                    right: 0%;
+                    font-size: $tmFormularioMQ;
+                }
+                .formulario__boton {
+                    right: 93%;
+                }
+                textarea {
+                    right: 0%;
+                    font-size: $tmFormularioMQ;
+                }
+            }
             
-        form {
-            margin:auto;    
-        }
     }
-}
-
-// FORMULARIO
-
-input {
-    @media screen and (max-width: 767px) {
-    font-size: $tmFormularioMQ;
-    }
-}
-
-textarea {
-    @media screen and (max-width: 767px) {
-        font-size: $tmFormularioMQ;
-        }
 }
 
 // FOOTER

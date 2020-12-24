@@ -18,7 +18,7 @@
 %contacto {
     font-family: $fuenteTextos;
     font-size: $tmFormulario;
-    color: $colorDestacado;
+    color: $colorTextos;
     border-color: $colorFondo;
     border: 0.5%;
     border-style: solid;
@@ -29,6 +29,7 @@
 %boton {
     font-family: $fuenteTitulos;
     font-size: $tmFormulario;
+    width: 300%;
     padding: 8%;
     margin:2%;
     color: $colorFondo;

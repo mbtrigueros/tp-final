@@ -3,7 +3,7 @@
     @include grid(repeat(2, 1fr), 0.4fr auto 0.2fr, 2.5%, 0%);
     grid-template-areas:
         "header header"
-        "contacto formulario"
+        "contacto contacto"
         "footer footer"
     }
 
@@ -11,20 +11,13 @@
 
 
 .contacto__flex {
-    grid-area: contacto;
-    margin: 2% 20%;
-    margin-right: 10%;
-        p {
-    margin: auto;
-
-    }
+    margin-right: 15%;
 }
 
 form {
     display: flex;
-    margin-top:2%;
-    margin-right: 10%;
-    grid-area: formulario;    
+    margin-right: 60%;
+    // grid-area: formulario;    
 }
 
 fieldset {
@@ -36,7 +29,10 @@ fieldset {
 
 input {
     @extend %contacto;
-    background-color: $colorHeader;
+    background-color: $colorFondo;
+    position:relative;
+    right:30%;
+    margin: 1%;
     transition: border-color 0.5s;
         &:hover{
             border-color:$colorDestacado;
@@ -47,7 +43,10 @@ input {
 
 textarea {
     @extend %contacto;
-    background-color: $colorHeader;
+    background-color: $colorFondo;
+    margin: 1%;
+    position:relative;
+    right:30%;
     transition: border-color 0.5s;
         &:hover {
         border-color: $colorDestacado;
@@ -59,10 +58,24 @@ textarea {
 .formulario__boton {
     @extend %boton;
     transition: background-color 0.5s;
+    position:relative;
+    right:190%;
         &:hover {
+            cursor:pointer;
             background-color: $colorFondo;
             color: $colorDestacado;
             border-color: $colorDestacado;
     }
 }
 
+// CUADRO
+
+.contacto__cuadro {
+    @include flex(row, center, center);
+    grid-area: contacto;
+    padding: 3%;
+    margin:auto;
+    border-radius: 2%;
+    box-shadow: 3px 5px 20px $colorTitulos;
+    width: 90%;
+}
