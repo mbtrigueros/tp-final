@@ -1,0 +1,141 @@
+
+// BIO
+
+.grid__bio {
+    height: 100vh;
+    @include grid(repeat(2, 1fr), 1fr auto 0.5fr auto 0.5fr, 2.5%, 1%);
+    grid-template-areas:
+        "header header"
+        "bio imagen"
+        "habilidades habilidades"
+        "ilustracion desarrollo"
+        "footer footer"
+}
+
+// SECCIONES
+
+.section__bio {
+    grid-area: bio;
+    margin: 2% 20%;
+    margin-right: 10%;
+    
+}
+
+.section__img-bio {
+    grid-area: imagen;
+}
+
+.h2__habilidades {
+    grid-area: habilidades;
+}
+
+.section__ilustracion {
+    grid-area: ilustracion;
+}
+
+.section__desarrollo {
+    grid-area: desarrollo;
+}
+
+// BARRAS DE HABILIDADES
+
+.PS {
+    @extend %barras;
+    .PS-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje90;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 90%;
+    }
+}
+
+.AI {
+    @extend %barras;
+    .AI-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+.SAI {
+    @extend %barras;
+    .SAI-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje100;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 100%;
+    }
+}
+
+.HT {
+    @extend %barras;
+    .HT-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+.CS {
+    @extend %barras;
+    .CS-por {
+        color: $colorDestacado;
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+.SS {
+    color: $colorDestacado;
+    @extend %barras;
+    .SS-por {
+        background-color: $colorTextos;
+        animation-name: porcentaje80;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        max-width: 80%;
+    }
+}
+
+// ANIMACION PORCENTAJES
+
+@keyframes porcentaje100 {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes porcentaje90 {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes porcentaje80 {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 80%;
+    }
+}

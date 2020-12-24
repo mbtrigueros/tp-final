@@ -1,0 +1,47 @@
+.grid__inicio {
+    height: 100vh;
+    @include grid(repeat(2, 1fr), 1fr auto 0.5fr, 2.5%, 1%);
+    grid-template-areas:
+        "header header"
+        "intro imagen"
+        "footer footer"
+    }
+
+.section__imagen { 
+    grid-area: imagen;
+    img {
+        animation-name: img_aparece;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+}
+
+.section__intro {
+    grid-area: intro;
+    p {
+        animation-name: intro_aparece;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+}
+
+//ANIMACIONES INICIO
+
+
+@keyframes intro_aparece {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes img_aparece {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}

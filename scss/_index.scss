@@ -1,0 +1,24 @@
+.grid__index {
+    @include grid(100%, auto auto auto, 2.5%, 1%);
+    height: 100vh;
+    text-align: center;
+    grid-template-areas:
+    "head"
+    "p"
+    "foot"
+}
+
+.header__index {
+    height: 70vh;
+    @include flex (column, center, center);
+    grid-area: head;
+}
+.texto__index {
+    height: 10vh;
+    grid-area: p;
+    font-style: italic;
+}
+.footer__index {
+    height: 100%;
+    grid-area:foot;
+}
