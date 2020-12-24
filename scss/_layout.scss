@@ -18,6 +18,7 @@
 .texto__index {
     height: 10vh;
     grid-area: p;
+    font-style: italic;
 }
 .footer__index {
     height: 10vh;
@@ -27,6 +28,7 @@
 // INICIO
 
 .grid__inicio {
+    height: 100vh;
     @include grid(repeat(2, 1fr), 1fr auto 0.5fr, 2.5%, 1%);
     grid-template-areas:
         "header header"
@@ -102,19 +104,18 @@ header {
 
 
 footer {
+    background-color: $colorDestacado;
     grid-area: footer;
     .footer__flex {
         @include flex(row, space-evenly, center);
             p {
             margin-right: 10%;
-            font-size: 1.1rem;
+            font-size: $tmTextosMQ;
                 ul  {
+                    
                     .footer__iconos{
                         @include flex(row, space-evenly, center);
                         margin-left: 15%;
-                            li{
-                                font-size: 0.5rem;    
-                    }
                 }
             }
         }
@@ -144,6 +145,7 @@ footer {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            margin-bottom:1%;
             
         }
         .img3 {

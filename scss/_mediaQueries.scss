@@ -2,32 +2,32 @@
 
 h1{
     a {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     font-size: $tmDestacadoMQ;
     }
 } } 
 
 
 h2 {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     font-size: $tmTitulosMQ;
     }
 }
 
 h3, h4, h5, h6 {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     font-size: $tmSubTitulosMQ;
     }
 }
 
 p {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     font-size: $tmTextosMQ;
     }
 }
 
 li { 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     font-size: $tmTextosMQ;
     }
 }
@@ -35,7 +35,7 @@ li {
 // INICIO
 
 .grid__inicio {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         @include grid(100%, auto auto auto auto, 2.5%, 1%);
         grid-template-areas: 
         "header"
@@ -57,9 +57,9 @@ li {
 
 // GALERIA
 
-.galeria
+.galeria {
+@media screen and (max-width: 767px) {
     ul {
-    @media screen and (max-width: 768px) {
             grid-template-columns: 70vw;
             grid-template-rows: 15% 15% 15%;
             margin: 3%;
@@ -68,13 +68,19 @@ li {
     "foto3"
     "foto1"
     "foto2";
+            .img2 {
+                margin-bottom: 5%;
+            }
+
+        }
     }
+
 }
 
 // CONTACTO
 
 .grid__contacto {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     @include grid(100%, auto auto auto auto, 2.5%, 0%);
     grid-template-areas:
         "header"
@@ -95,13 +101,13 @@ li {
 // FORMULARIO
 
 input {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     font-size: $tmFormularioMQ;
     }
 }
 
 textarea {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         font-size: $tmFormularioMQ;
         }
 }

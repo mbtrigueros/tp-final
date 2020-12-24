@@ -58,6 +58,11 @@ a {
         color: $colorTextos;
 } }
 
+span {
+    color: $colorTitulos;
+    font-style: italic;
+}
+
 img {
     max-width: 100%;
     height: auto;
