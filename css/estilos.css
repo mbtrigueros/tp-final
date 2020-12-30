@@ -436,7 +436,7 @@ footer .footer__flex p ul .footer__iconos {
   width: 5%;
   height: auto;
   position: absolute;
-  top: 45vh;
+  top: 44vh;
   right: 3vh;
 }
 
@@ -821,13 +821,96 @@ textarea:hover {
 @media screen and (max-width: 767px) {
   .galeria ul {
     grid-template-columns: 70vw;
-    grid-template-rows: 15% 15% 15%;
+    grid-template-rows: repeat(8, 15%);
     margin: 3%;
     grid-gap: 1%;
-    grid-template-areas: "foto3" "foto1" "foto2";
+    grid-template-areas: "i8" "i3" "i2" "i7" "i1" "i5" "i6" "i4";
   }
-  .galeria ul .img2 {
-    margin-bottom: 5%;
+  .galeria ul .img8 {
+    margin-bottom: 40%;
+  }
+  .galeria ul .img1 {
+    margin-top: -15%;
+  }
+  .img1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .img2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .img3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .img4 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .img6 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .img5 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .img8 {
+    -ms-grid-row: 15;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .img7 {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .modal {
+    border-radius: 2%;
+    width: 80%;
+    height: auto;
+    margin-top: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal__flecha-1 {
+    color: #fdca40;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 10vh;
+    right: 3vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal__flecha-2 {
+    color: #fdca40;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 10vh;
+    right: 43vh;
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal__cerrar {
+    color: #fdca40;
+    width: 6%;
+    height: auto;
+    position: absolute;
+    top: 0vh;
+    right: 1%;
   }
 }
 

@@ -78,20 +78,74 @@ nav {
 @media screen and (max-width: 767px) {
     ul {
             grid-template-columns: 70vw;
-            grid-template-rows: 15% 15% 15%;
+            grid-template-rows: repeat(8, 15%);
             margin: 3%;
             grid-gap: 1%;
             grid-template-areas: 
-    "foto3"
-    "foto1"
-    "foto2";
-            .img2 {
-                margin-bottom: 5%;
+    "i8"
+    "i3"
+    "i2"
+    "i7"
+    "i1"
+    "i5"
+    "i6"
+    "i4"
+    ;
+            .img8 {
+                margin-bottom: 40%;
+            }
+            .img1 {
+                margin-top: -15%;
             }
 
         }
     }
 
+}
+
+// MODAL
+
+.modal {
+    @media screen and (max-width: 740px) {
+    border-radius: 2%;
+    width: 80%;
+    height: auto;
+    margin-top: 50%;
+    }   
+}
+
+.modal__flecha-1 {
+    @media screen and (max-width: 767px) {
+    color: $colorDestacado;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 10vh;
+    right: 3vh;
+    }
+}
+
+.modal__flecha-2 {
+    @media screen and (max-width: 767px) {
+    color: $colorDestacado;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 10vh;
+    right: 43vh;
+    transform:rotate(180deg);
+    }
+}
+
+.modal__cerrar {
+    @media screen and (max-width: 767px) {
+    color: $colorDestacado;
+    width: 6%;
+    height: auto;
+    position: absolute;
+    top: 0vh;
+    right: 1%;
+    }
 }
 
 // CONTACTO
