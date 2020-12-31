@@ -767,63 +767,63 @@ textarea:hover {
   transform: scale(98%);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992x) {
   h1 a {
     font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .mb__header {
     display: block;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .emebe__header {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   h2 {
     font-size: 1.1rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   h3, h4, h5, h6 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   li {
     font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   p {
     font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   nav ul li {
     font-size: 0.9rem;
     margin: 1%;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   button {
     padding: 1px;
     font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .grid__index {
     display: grid;
     grid-template-columns: 100%;
@@ -846,7 +846,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .grid__inicio {
     height: 100vh;
     display: grid;
@@ -886,7 +886,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .galeria ul {
     grid-template-columns: 70vw;
     grid-template-rows: repeat(8, 15%);
@@ -939,7 +939,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 992px) {
   .modal {
     border-radius: 2%;
     width: 80%;
@@ -948,7 +948,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .modal__flecha-1 {
     color: #fdca40;
     width: 5%;
@@ -959,7 +959,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .modal__flecha-2 {
     color: #fdca40;
     width: 5%;
@@ -971,7 +971,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .modal__cerrar {
     color: #fdca40;
     width: 6%;
@@ -982,7 +982,7 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .grid__contacto {
     display: grid;
     grid-template-columns: 100%;
@@ -1032,13 +1032,13 @@ textarea:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   footer .footer__flex {
     position: relative;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .grid__bio {
     display: grid;
     grid-template-columns: 100%;

@@ -2,44 +2,44 @@
 
 h1{
     a {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992x) {
     font-size: $tmDestacadoMQ;
     }
 } } 
 
 .mb__header {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
         display: block;
     }
 }
 
 .emebe__header {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
         display: none;
     }
 }
 
 
 h2 {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     font-size: $tmTitulosMQ;
     }
 }
 
 h3, h4, h5, h6 {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     font-size: $tmSubTitulosMQ;
     }
 }
 
 li {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     font-size: $tmTextosMQ;
     }
 }
 
 p {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     font-size: $tmTextosMQ;
     }
 }
@@ -47,7 +47,7 @@ p {
 nav {
     ul{
         li { 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     font-size: $tmTextosMQ;
     margin:1%;
             }
@@ -56,7 +56,7 @@ nav {
 }
 
 button {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width:992px) {
     padding: 1px;
     font-size: $tmTextosMQ;
     }
@@ -66,7 +66,7 @@ button {
 // INDEX
 
 .grid__index {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width:992px) {
     @include grid(100%, auto auto 5%, 2.5%, 1%);
     grid-template-areas:
     "head"
@@ -80,7 +80,7 @@ button {
 // INICIO
 
 .grid__inicio {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
         height: 100vh;
         @include grid(100%, 10% auto auto 5%, 2.5%, 1%);
         grid-template-areas: 
@@ -104,7 +104,7 @@ button {
 // GALERIA
 
 .galeria {
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
     ul {
             grid-template-columns: 70vw;
             grid-template-rows: repeat(8, 15%);
@@ -136,7 +136,7 @@ button {
 // MODAL
 
 .modal {
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 992px) {
     border-radius: 2%;
     width: 80%;
     height: auto;
@@ -145,7 +145,7 @@ button {
 }
 
 .modal__flecha-1 {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     color: $colorDestacado;
     width: 5%;
     height: auto;
@@ -156,7 +156,7 @@ button {
 }
 
 .modal__flecha-2 {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     color: $colorDestacado;
     width: 5%;
     height: auto;
@@ -168,7 +168,7 @@ button {
 }
 
 .modal__cerrar {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     color: $colorDestacado;
     width: 6%;
     height: auto;
@@ -181,7 +181,7 @@ button {
 // CONTACTO
 
 .grid__contacto {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
     @include grid(100%, 10% auto 5%, 2.5%, 1%);
     height: 100vh;
     grid-template-areas:
@@ -215,7 +215,7 @@ button {
 // FOOTER
 
 footer {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
         .footer__flex {
             position: relative;
         }
@@ -225,7 +225,7 @@ footer {
 // BIO
 
 .grid__bio {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
         @include grid(100%, 10% auto auto auto auto auto 5%, 2.5%, 1%);
         grid-template-areas: 
         "header"
