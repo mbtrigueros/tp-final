@@ -539,6 +539,7 @@ button:hover {
   -ms-grid-column: 3;
 }
 .section__img-bio .img__bio {
+  max-width: 55%;
   border-radius: 50%;
   border-color: #e8e9eb;
   border-style: solid;
@@ -736,6 +737,7 @@ textarea:hover {
 }
 
 .imagen__contacto {
+  max-width: 50%;
   border-radius: 50%;
   border-color: #e8e9eb;
   border-style: solid;
@@ -852,7 +854,7 @@ textarea:hover {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% auto auto 5%;
-    grid-row-gap: 2.5%;
+    grid-row-gap: 1%;
     grid-column-gap: 1%;
     grid-template-areas: "header" "intro" "imagen" "footer";
   }
@@ -887,6 +889,31 @@ textarea:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .gri__ilustraciones {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto 5%;
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+    grid-template-areas: "header" "galeria" "footer";
+  }
+  .gri__ilustraciones > header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .gri__ilustraciones > footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .gri__ilustraciones > .galeria {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .galeria ul {
     grid-template-columns: 70vw;
     grid-template-rows: repeat(8, 15%);
@@ -895,7 +922,7 @@ textarea:hover {
     grid-template-areas: "i8" "i3" "i2" "i7" "i1" "i5" "i6" "i4";
   }
   .galeria ul .img8 {
-    margin-bottom: 40%;
+    margin-bottom: 100%;
   }
   .galeria ul .img1 {
     margin-top: -15%;
@@ -987,7 +1014,7 @@ textarea:hover {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% auto 5%;
-    grid-row-gap: 2.5%;
+    grid-row-gap: 1%;
     grid-column-gap: 1%;
     height: 100vh;
     grid-template-areas: "header" "contacto" "footer";
@@ -1043,7 +1070,7 @@ textarea:hover {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% auto auto auto auto auto 5%;
-    grid-row-gap: 2.5%;
+    grid-row-gap: 1%;
     grid-column-gap: 1%;
     grid-template-areas: "header" "imagen" "bio" "habilidades" "ilustracion" "desarrollo" "footer";
   }

@@ -82,7 +82,7 @@ button {
 .grid__inicio {
     @media screen and (max-width: 992px) {
         height: 100vh;
-        @include grid(100%, 10% auto auto 5%, 2.5%, 1%);
+        @include grid(100%, 10% auto auto 5%, 1%, 1%);
         grid-template-areas: 
         "header"
         "intro"
@@ -103,31 +103,38 @@ button {
 
 // GALERIA
 
+.gri__ilustraciones {
+    @media screen and (max-width: 992px) {
+        @include grid(100%, 10% auto 5%, 1%, 1%);
+        grid-template-areas:
+        "header"
+        "galeria"
+        "footer";
+    }
+}
 .galeria {
-@media screen and (max-width: 992px) {
-    ul {
-            grid-template-columns: 70vw;
-            grid-template-rows: repeat(8, 15%);
-            margin: 3%;
-            grid-gap: 1%;
-            grid-template-areas: 
-    "i8"
-    "i3"
-    "i2"
-    "i7"
-    "i1"
-    "i5"
-    "i6"
-    "i4"
-    ;
-
+    @media screen and (max-width: 992px) {
+        ul {
+                grid-template-columns: 70vw;
+                grid-template-rows: repeat(8, 15%);
+                margin: 3%;
+                grid-gap: 1%;
+                grid-template-areas: 
+        "i8"
+        "i3"
+        "i2"
+        "i7"
+        "i1"
+        "i5"
+        "i6"
+        "i4"
+        ;
             .img8 {
-                margin-bottom: 40%;
+                margin-bottom: 100%;
             }
             .img1 {
                 margin-top: -15%;
             }
-
         }
     }
 
@@ -182,7 +189,7 @@ button {
 
 .grid__contacto {
     @media screen and (max-width: 992px) {
-    @include grid(100%, 10% auto 5%, 2.5%, 1%);
+    @include grid(100%, 10% auto 5%, 1%, 1%);
     height: 100vh;
     grid-template-areas:
         "header"
@@ -226,7 +233,7 @@ footer {
 
 .grid__bio {
     @media screen and (max-width: 992px) {
-        @include grid(100%, 10% auto auto auto auto auto 5%, 2.5%, 1%);
+        @include grid(100%, 10% auto auto auto auto auto 5%, 1%, 1%);
         grid-template-areas: 
         "header"
         "imagen"

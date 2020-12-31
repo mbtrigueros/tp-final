@@ -24,6 +24,7 @@
 .section__img-bio {
     grid-area: imagen;
     .img__bio {
+        max-width: 55%;
         border-radius: 50%;
         border-color: $colorFondo;
         border-style: solid;
