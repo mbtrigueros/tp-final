@@ -5,16 +5,34 @@
     grid-template-areas:
     "head"
     "p"
-    "foot"
-}
+    "foot";
 
-.titulo__index {
-        text-transform: uppercase;
-        transition: animation 1s, transform 1s;
-        animation: color__titulo infinite 5s;
-        &:hover {
-            transform:scale(95%);
+        .titulo__index {
+            text-transform: uppercase;
+            transition: animation 1s, transform 1s;
+            animation: color__titulo infinite 5s;
+            &:hover {
+                transform:scale(95%);
+        }
     }
+
+    .header__index {
+        height: 70vh;
+        @include flex (column, center, center);
+        grid-area: head;
+    }
+
+    .texto__index {
+        height: 10vh;
+        grid-area: p;
+        font-style: italic;
+    }
+
+    .footer__index {
+        height: 100%;
+        grid-area:foot;
+    }
+
 }
 
 // ANIMACION H1
@@ -35,19 +53,4 @@
     100% {
         color: $colorDestacado;
     }
-}
-
-.header__index {
-    height: 70vh;
-    @include flex (column, center, center);
-    grid-area: head;
-}
-.texto__index {
-    height: 10vh;
-    grid-area: p;
-    font-style: italic;
-}
-.footer__index {
-    height: 100%;
-    grid-area:foot;
 }

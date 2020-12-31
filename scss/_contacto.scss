@@ -7,17 +7,13 @@
         "footer footer"
     }
 
-
-
-
 .contacto__flex {
     margin-right: 30%;
 }
 
 form {
     display: flex;
-    margin-right: 60%;
-    // grid-area: formulario;    
+    margin-right: 60%; 
 }
 
 fieldset {
@@ -37,7 +33,7 @@ input {
         &:hover{
             border-color:$colorDestacado;
             transform:scale(102%);
-        }
+    }
 }
 
                                                         /* TEXTAREA*/

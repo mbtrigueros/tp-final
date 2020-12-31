@@ -26,6 +26,7 @@ h2{
     margin: 1%;
     text-align: center;
 }
+
 h3,h4,h5,h6 {
     @extend %titulos;
     font-size: $tmSubTitulos;
@@ -57,7 +58,8 @@ a {
         opacity: 60%;
         text-decoration: none;
         color: $colorTextos;
-} }
+    } 
+}
 
 span {
     color: $colorTitulos;

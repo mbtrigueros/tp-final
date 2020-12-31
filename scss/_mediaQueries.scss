@@ -4,8 +4,9 @@ h1{
     a {
     @media screen and (max-width: 768x) {
     font-size: $tmDestacadoMQ;
-    }
-} } 
+        }
+    } 
+} 
 
 .mb__header {
     @media screen and (max-width: 768px) {
@@ -74,6 +75,7 @@ button {
     "p"
     "foot";
     }
+
     @media screen and (max-width:768px) and (orientation: landscape) {
         @include grid(100%, auto auto 12%, 0%, 0%);
     }
@@ -202,36 +204,14 @@ button {
 
 .modal__flecha-1 {
     @media screen and (max-width: 768px) {
-    width: 5%;
-    height: auto;
-    position: absolute;
-    top: 10vh;
-    right: 3vh; 
-    }
-
-    @media screen and (max-width: 768px) and (orientation:landscape) {
-    width: 5%;
-    height: auto;
-    position: absolute;
-    top: 45vh;
-    right: 3vh; 
+    display: none;
     }
 }
 
 .modal__flecha-2 {
     @media screen and (max-width: 768px) {
-    width: 5%;
-    height: auto;
-    position: absolute;
-    top: 10vh;
-    right: 50vh;
-    transform:rotate(180deg);
+    display: none;
     }
-
-    @media screen and (max-width: 768px) and (orientation:landscape) {
-        top: 45vh;
-        right: 167vh;
-        }
 }
 
 .modal__cerrar {
@@ -280,21 +260,12 @@ button {
         @include grid(100%, 15% auto 12%, 1%, 1%);
         .contacto__cuadro {
             @include flex(row,center,center);
-            margin:5%;
+            margin:4%;
             }
         }
     }
 }
 
-// FOOTER
-
-footer {
-    @media screen and (max-width: 768px) {
-        .footer__flex {
-            position: relative;
-        }
-}
-}
 
 // BIO
 
@@ -323,5 +294,4 @@ footer {
             margin-bottom: 2%;
         }
     }
-
 }
