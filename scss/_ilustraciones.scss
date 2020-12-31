@@ -1,37 +1,17 @@
 // GRID ILUSTRACIONES
 
 .grid__ilustraciones {
-    @include grid(100%, 1fr auto 0.5fr, 2.5%, 1%);
+    @include grid(100%, 1fr auto 0.5fr, 2%, 1%);
     grid-template-areas:
     "header"
     "galeria"
     "footer";
 }
 
-// ANIMACIONES GALERIA
-
-@keyframes galeria__animacion {
-    from {
-        transform:translateX(-50%);
-    }
-    to {
-        transform:translateX(0%)
-    }
-}
-
-@keyframes galeria__animacion_2 {
-    from {
-        transform:translateX(50%);
-    }
-    to {
-        transform:translateX(0%)
-    }
-}
 
 // GALERIA
 
 .galeria {
-    margin:auto;
     grid-area: galeria;
     ul {
         @include grid(35% 35% 10% 35%, 20% 20% 20% 20% , 0.5%, 0.5%);
@@ -47,14 +27,14 @@
                 opacity: 100%;
             }
             img {
-                filter:saturate(50%);
+                filter:grayscale(100%);
                 border-radius: 1.5%;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 transition: filter 0.5s, transform 0.5s;
                 &:hover {
-                    filter: saturate(100%);
+                    filter:grayscale(0%);
                     transform:scale(98%);
                 }
                 }
@@ -63,50 +43,33 @@
 }
 
     .img1{
-        grid-area: i8; 
-        animation: galeria__animacion 1.5s ease-in-out;
-        animation-iteration-count: 1;
-        
+        grid-area: i8;   
     }
     
     .img2 {
         grid-area: i3; 
-        animation: galeria__animacion 1.3s ease-in-out;
-        animation-iteration-count: 1;
     }
 
     .img3 {
         grid-area: i2; 
-        animation: galeria__animacion 1s ease-in-out;
-        animation-iteration-count: 1;
     }
     
     .img4 {
         grid-area: i7; 
-        animation: galeria__animacion 1s ease-in-out;
-        animation-iteration-count: 1;
     }
     
     .img6 {
         grid-area: i5; 
-        animation: galeria__animacion_2 1.5s ease-in-out;
-        animation-iteration-count: 1;
     }
     
     .img5 {
         grid-area: i1; 
-        animation: galeria__animacion_2 1.3s ease-in-out;
-        animation-iteration-count: 1;
     }
     
     .img8 {
         grid-area: i4; 
-        animation: galeria__animacion 1s ease-in-out;
-        animation-iteration-count: 1;
     }
     
     .img7 {
         grid-area: i6; 
-        animation: galeria__animacion 1.4s ease-in-out;
-        animation-iteration-count: 1;
     }

@@ -23,6 +23,17 @@
 
 .section__img-bio {
     grid-area: imagen;
+    .img__bio {
+        border-radius: 50%;
+        border-color: $colorFondo;
+        border-style: solid;
+        border: 0.5%;
+        transition: border-color 0.3s, transform 5s;
+        &:hover {
+            border-color: $colorDestacado;
+            transform: rotate(360deg);
+        }
+    }
 }
 
 .h2__habilidades {
@@ -42,10 +53,13 @@
 .PS {
     @extend %barras;
     .PS-por {
+        border: solid;
+        border-color: $colorTextos;
+        border-radius: 5%;
         color: $colorDestacado;
-        background-color: $colorTextos;
+        background-color: $colorTitulos;
         animation-name: porcentaje90;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
         max-width: 90%;
     }
@@ -54,10 +68,13 @@
 .AI {
     @extend %barras;
     .AI-por {
+        border: solid;
+        border-color: $colorTextos;
+        border-radius: 5%;
         color: $colorDestacado;
-        background-color: $colorTextos;
+        background-color: $colorTitulos;
         animation-name: porcentaje80;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
         max-width: 80%;
     }
@@ -66,10 +83,13 @@
 .SAI {
     @extend %barras;
     .SAI-por {
+        border: solid;
+        border-color: $colorTextos;
+        border-radius: 5%;
         color: $colorDestacado;
-        background-color: $colorTextos;
+        background-color: $colorTitulos;
         animation-name: porcentaje100;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
         max-width: 100%;
     }
@@ -78,10 +98,13 @@
 .HT {
     @extend %barras;
     .HT-por {
+        border: solid;
+        border-color: $colorTextos;
+        border-radius: 5%;
         color: $colorDestacado;
-        background-color: $colorTextos;
+        background-color: $colorTitulos;
         animation-name: porcentaje80;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
         max-width: 80%;
     }
@@ -90,10 +113,13 @@
 .CS {
     @extend %barras;
     .CS-por {
+        border: solid;
+        border-color: $colorTextos;
+        border-radius: 5%;
         color: $colorDestacado;
-        background-color: $colorTextos;
+        background-color: $colorTitulos;
         animation-name: porcentaje80;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
         max-width: 80%;
     }
@@ -103,9 +129,13 @@
     color: $colorDestacado;
     @extend %barras;
     .SS-por {
-        background-color: $colorTextos;
+        border: solid;
+        border-color: $colorTextos;
+        border-radius: 5%;
+        color: $colorDestacado;
+        background-color: $colorTitulos;
         animation-name: porcentaje80;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
         max-width: 80%;
     }

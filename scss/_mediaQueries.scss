@@ -7,6 +7,18 @@ h1{
     }
 } } 
 
+.mb__header {
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+.emebe__header {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 
 h2 {
     @media screen and (max-width: 767px) {
@@ -43,6 +55,13 @@ nav {
     }
 }
 
+button {
+    @media screen and (max-width: 767px) {
+    padding: 1px;
+    font-size: $tmTextosMQ;
+    }
+}
+
 
 // INDEX
 
@@ -52,9 +71,11 @@ nav {
     grid-template-areas:
     "head"
     "p"
-    "foot"
+    "foot";
     }
 }
+
+
 
 // INICIO
 
@@ -67,6 +88,14 @@ nav {
         "intro"
         "imagen"
         "footer";
+        .section__intro {
+            h2 {
+                margin:auto;
+            }
+            p {
+                margin:3%;
+            }
+        }
     }
 }
 
@@ -91,6 +120,7 @@ nav {
     "i6"
     "i4"
     ;
+
             .img8 {
                 margin-bottom: 40%;
             }
@@ -162,7 +192,7 @@ nav {
             @include flex(column,center,center);
         }
         .contacto__flex {
-            margin: auto;
+            margin: 1%;
             }
             form {
                 margin: auto;
@@ -199,8 +229,8 @@ footer {
         @include grid(100%, 10% auto auto auto auto auto 5%, 2.5%, 1%);
         grid-template-areas: 
         "header"
-        "bio"
         "imagen"
+        "bio"
         "habilidades"
         "ilustracion"
         "desarrollo"
