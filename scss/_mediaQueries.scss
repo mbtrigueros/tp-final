@@ -137,7 +137,7 @@ button {
 
     @media screen and (min-width: 768px) and (max-width:1400px) {
         ul {
-        @include grid(25% 25% 5% 25%, 30% 20% 20% 20%, 0.5%, 0.5%);
+        @include grid(25% 25% 5% 25%, 20% 20% 20% 20%, 0.5%, 0.5%);
                 } 
             }
 
@@ -179,10 +179,11 @@ button {
 .modal {
 
     @media screen and (max-width: 768px) {
-    border-radius: 2%;
-    width: 80%;
-    height: auto;
-    margin-top: 50%;
+        border-radius: 2%;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        margin: 0%;
     }
 
     @media screen and (max-width: 768px) and (orientation:landscape) {
@@ -260,7 +261,7 @@ button {
         @include grid(100%, 15% auto 12%, 1%, 1%);
         .contacto__cuadro {
             @include flex(row,center,center);
-            margin:4%;
+            margin:2%;
             }
         }
     }
