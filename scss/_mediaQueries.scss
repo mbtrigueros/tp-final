@@ -102,10 +102,20 @@ button {
     }
 
     @media screen and (max-width: 768px) and (orientation:landscape) {
-        @include grid(100%, 15% auto auto 12%, 1%, 1%);
+        @include grid(50% 50%, 15% auto 12%, 1%, 0%);
+        height: 100vh;
+        grid-template-areas: 
+        "header header"
+        "intro imagen"
+        "footer footer";
         .section__intro {
             p {
             margin:1%;
+            }
+        }
+        .section__imagen {
+            img {
+                width: 60%;    
             }
         }
     }
@@ -116,6 +126,13 @@ button {
 // GALERIA
 
 .galeria {
+
+    @media screen and (min-width: 768px) and (max-width:1400px) {
+        ul {
+        @include grid(25% 25% 5% 25%, 30% 20% 20% 20%, 0.5%, 0.5%);
+                } 
+            }
+
     @media screen and (max-width: 768px) {
         ul {
             @include grid (80%, repeat(8, auto), 1%, 1%);
@@ -152,28 +169,51 @@ button {
 // MODAL
 
 .modal {
+
     @media screen and (max-width: 768px) {
     border-radius: 2%;
     width: 80%;
     height: auto;
     margin-top: 50%;
-    }   
+    }
+
+    @media screen and (max-width: 768px) and (orientation:landscape) {
+    border-radius: 2%;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1200px) {
+    border-radius: 2%;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0%;      
+    }
 }
 
 .modal__flecha-1 {
     @media screen and (max-width: 768px) {
-    color: $colorDestacado;
     width: 5%;
     height: auto;
     position: absolute;
     top: 10vh;
-    right: 3vh;
+    right: 3vh; 
+    }
+
+    @media screen and (max-width: 768px) and (orientation:landscape) {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 45vh;
+    right: 3vh; 
     }
 }
 
 .modal__flecha-2 {
     @media screen and (max-width: 768px) {
-    color: $colorDestacado;
     width: 5%;
     height: auto;
     position: absolute;
@@ -181,11 +221,15 @@ button {
     right: 43vh;
     transform:rotate(180deg);
     }
+
+    @media screen and (max-width: 768px) and (orientation:landscape) {
+        top: 45vh;
+        right: 167vh;
+        }
 }
 
 .modal__cerrar {
     @media screen and (max-width: 768px) {
-    color: $colorDestacado;
     width: 6%;
     height: auto;
     position: absolute;
@@ -225,10 +269,14 @@ button {
                     font-size: $tmFormularioMQ;
                 }
             }
-            
-    }
+
     @media screen and (max-width: 768px) and (orientation:landscape) {
         @include grid(100%, 15% auto 12%, 1%, 1%);
+        .contacto__cuadro {
+            @include flex(row,center,center);
+            margin:5%;
+            }
+        }
     }
 }
 
