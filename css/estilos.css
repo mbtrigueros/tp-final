@@ -827,6 +827,7 @@ textarea:hover {
 
 @media screen and (max-width: 768px) {
   .grid__index {
+    height: 100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto 5%;
@@ -851,7 +852,7 @@ textarea:hover {
   .grid__index {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto 10%;
+    grid-template-rows: auto auto 12%;
     grid-row-gap: 1%;
     grid-column-gap: 1%;
   }
@@ -872,6 +873,9 @@ textarea:hover {
   }
   .grid__inicio .section__intro p {
     margin: 3%;
+  }
+  .grid__inicio .section__imagen img {
+    width: 70%;
   }
   .grid__inicio > header {
     -ms-grid-row: 1;

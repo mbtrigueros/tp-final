@@ -67,6 +67,7 @@ button {
 
 .grid__index {
     @media screen and (max-width:768px) {
+    height: 100vh;
     @include grid(100%, auto auto 5%, 1%, 1%);
     grid-template-areas:
     "head"
@@ -74,7 +75,7 @@ button {
     "foot";
     }
     @media screen and (max-width:768px) and (orientation: landscape) {
-        @include grid(100%, auto auto 10%, 1%, 1%);
+        @include grid(100%, auto auto 12%, 1%, 1%);
     }
 }
 
@@ -98,6 +99,11 @@ button {
             p {
                 margin:3%;
             }
+        }
+        .section__imagen {
+            img {
+                width: 70%;    
+            } 
         }
     }
 
