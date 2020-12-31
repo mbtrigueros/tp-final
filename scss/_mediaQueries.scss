@@ -74,7 +74,7 @@ button {
     "foot";
     }
     @media screen and (max-width:768px) and (orientation: landscape) {
-        @include grid(100%, auto auto 12%, 1%, 1%);
+        @include grid(100%, auto auto 10%, 1%, 1%);
     }
 }
 

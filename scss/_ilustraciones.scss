@@ -14,7 +14,7 @@
 .galeria {
     grid-area: galeria;
     ul {
-        @include grid(35% 35% 10% 35%, 20% 20% 20% 20% , 0.5%, 0.5%);
+        @include grid(25% 25% 5% 25%, 20% 20% 20% 20%, 0.5%, 0.5%);
         justify-content: center;
         grid-template-areas: 
         "i8 i3 i2 i2"
