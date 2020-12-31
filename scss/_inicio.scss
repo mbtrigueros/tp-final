@@ -57,7 +57,7 @@ button {
 
 @keyframes intro_aparece {
     from {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
     to {
         transform: translateX(0%);
@@ -66,7 +66,7 @@ button {
 
 @keyframes img_aparece {
     from {
-        transform: translateX(50%);
+        transform: translateX(100%);
     }
     to {
         transform: translateX(0%);

@@ -8,6 +8,35 @@
     "foot"
 }
 
+.titulo__index {
+        text-transform: uppercase;
+        transition: animation 1s, transform 1s;
+        animation: color__titulo infinite 5s;
+        &:hover {
+            transform:scale(95%);
+    }
+}
+
+// ANIMACION H1
+
+@keyframes color__titulo {
+    0% {
+        color: $colorDestacado;
+    }
+    30% {
+        color: $colorFondo;
+    }
+    50% {
+        color:  $colorTextos;
+    }
+    70% {
+            color: $colorFondo;
+    }
+    100% {
+        color: $colorDestacado;
+    }
+}
+
 .header__index {
     height: 70vh;
     @include flex (column, center, center);

@@ -236,6 +236,32 @@ footer .footer__flex p ul .footer__iconos {
   grid-template-areas: "head" "p" "foot";
 }
 
+.titulo__index {
+  text-transform: uppercase;
+  transition: animation 1s, transform 1s;
+  animation: color__titulo infinite 5s;
+}
+.titulo__index:hover {
+  transform: scale(95%);
+}
+
+@keyframes color__titulo {
+  0% {
+    color: #fdca40;
+  }
+  30% {
+    color: #e8e9eb;
+  }
+  50% {
+    color: #0b090b;
+  }
+  70% {
+    color: #e8e9eb;
+  }
+  100% {
+    color: #fdca40;
+  }
+}
 .header__index {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -274,6 +300,7 @@ footer .footer__flex p ul .footer__iconos {
 .galeria {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  animation: galeria__aparece 1s 1;
   grid-area: galeria;
 }
 .galeria ul {
@@ -305,12 +332,14 @@ footer .footer__flex p ul .footer__iconos {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: i8;
+  animation: animacion__galeria 1s 1;
 }
 
 .img2 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: i3;
+  animation: animacion__galeria 1.5s 1;
 }
 
 .img3 {
@@ -318,12 +347,14 @@ footer .footer__flex p ul .footer__iconos {
   -ms-grid-column: 5;
   -ms-grid-column-span: 3;
   grid-area: i2;
+  animation: animacion__galeria 2s 1;
 }
 
 .img4 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: i7;
+  animation: animacion__galeria 2.5s 1;
 }
 
 .img6 {
@@ -331,12 +362,14 @@ footer .footer__flex p ul .footer__iconos {
   -ms-grid-column: 5;
   -ms-grid-column-span: 3;
   grid-area: i5;
+  animation: animacion__galeria 3s 1;
 }
 
 .img5 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: i1;
+  animation: animacion__galeria 3.5s 1;
 }
 
 .img8 {
@@ -344,6 +377,7 @@ footer .footer__flex p ul .footer__iconos {
   -ms-grid-row-span: 3;
   -ms-grid-column: 7;
   grid-area: i4;
+  animation: animacion__galeria 4s 1;
 }
 
 .img7 {
@@ -352,8 +386,25 @@ footer .footer__flex p ul .footer__iconos {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: i6;
+  animation: animacion__galeria 4.5s 1;
 }
 
+@keyframes animacion__galeria {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes galeria__aparece {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .fondo-modal {
   position: fixed;
   left: 0;
@@ -496,7 +547,7 @@ button:hover {
 
 @keyframes intro_aparece {
   from {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0%);
@@ -504,7 +555,7 @@ button:hover {
 }
 @keyframes img_aparece {
   from {
-    transform: translateX(50%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0%);
@@ -523,6 +574,7 @@ button:hover {
 .section__bio {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  animation: bio__aparece 1s 1;
   grid-area: bio;
   margin: 2% 20%;
   margin-right: 10%;
@@ -531,6 +583,7 @@ button:hover {
 .section__img-bio {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
+  animation: bio-img__aparece 1.5s 1;
   grid-area: imagen;
 }
 
@@ -561,12 +614,14 @@ button:hover {
 .section__ilustracion {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
+  animation: ilustracion__aparece 2s 1;
   grid-area: ilustracion;
 }
 
 .section__desarrollo {
   -ms-grid-row: 7;
   -ms-grid-column: 3;
+  animation: desarrollo__aparece 2.5s 1;
   grid-area: desarrollo;
 }
 
@@ -669,6 +724,38 @@ button:hover {
     width: 80%;
   }
 }
+@keyframes bio__aparece {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes bio-img__aparece {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes ilustracion__aparece {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes desarrollo__aparece {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .grid__contacto {
   height: 100vh;
   display: grid;
@@ -706,7 +793,7 @@ input {
 }
 input:hover {
   border-color: #fdca40;
-  transform: scale(105%);
+  transform: scale(102%);
 }
 
 /* TEXTAREA*/
@@ -719,7 +806,7 @@ textarea {
 }
 textarea:hover {
   border-color: #fdca40;
-  transform: scale(105%);
+  transform: scale(102%);
 }
 
 /* BOTON*/
@@ -733,7 +820,7 @@ textarea:hover {
   background-color: #e8e9eb;
   color: #fdca40;
   border-color: #fdca40;
-  transform: scale(105%);
+  transform: scale(102%);
 }
 
 .imagen__contacto {
@@ -746,13 +833,14 @@ textarea:hover {
 }
 .imagen__contacto:hover {
   border-color: #fdca40;
-  transform: scale(105%);
+  transform: scale(102%);
 }
 
 .contacto__cuadro {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
+  animation: contacto__aparece 1s 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -769,6 +857,14 @@ textarea:hover {
   transform: scale(98%);
 }
 
+@keyframes contacto__aparece {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 @media screen and (max-width: 768x) {
   h1 a {
     font-size: 1.8rem;

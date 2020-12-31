@@ -15,6 +15,7 @@
 // SECCIONES
 
 .section__bio {
+    animation: bio__aparece 1s 1;
     grid-area: bio;
     margin: 2% 20%;
     margin-right: 10%;
@@ -22,6 +23,7 @@
 }
 
 .section__img-bio {
+    animation: bio-img__aparece 1.5s 1;
     grid-area: imagen;
     .img__bio {
         max-width: 55%;
@@ -42,10 +44,12 @@
 }
 
 .section__ilustracion {
+    animation: ilustracion__aparece 2s 1;
     grid-area: ilustracion;
 }
 
 .section__desarrollo {
+    animation: desarrollo__aparece 2.5s 1;
     grid-area: desarrollo;
 }
 
@@ -168,5 +172,43 @@
     }
     to {
         width: 80%;
+    }
+}
+
+// ANIMACION BIO
+
+@keyframes bio__aparece {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes bio-img__aparece {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes ilustracion__aparece {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes desarrollo__aparece {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
     }
 }

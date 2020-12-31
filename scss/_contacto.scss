@@ -36,7 +36,7 @@ input {
     transition: border-color 0.5s, transform 0.5s;
         &:hover{
             border-color:$colorDestacado;
-            transform:scale(105%);
+            transform:scale(102%);
         }
 }
 
@@ -51,7 +51,7 @@ textarea {
     transition: border-color 0.5s, transform 0.5s;
         &:hover {
         border-color: $colorDestacado;
-        transform:scale(105%);
+        transform:scale(102%);
     }
 }
 
@@ -67,7 +67,7 @@ textarea {
             background-color: $colorFondo;
             color: $colorDestacado;
             border-color: $colorDestacado;
-            transform:scale(105%);
+            transform:scale(102%);
     }
 }
 
@@ -82,13 +82,14 @@ textarea {
     transition: border-color 0.3s, transform 0.3s;
     &:hover {
         border-color: $colorDestacado;
-        transform:scale(105%);
+        transform:scale(102%);
     }
 }
 
 // CUADRO
 
 .contacto__cuadro {
+    animation: contacto__aparece 1s 1;
     @include flex(row, center, center);
     grid-area: contacto;
     padding: 3%;
@@ -99,5 +100,16 @@ textarea {
     transition: transform 0.5s;
     &:hover {
         transform:scale(98%);
+    }
+}
+
+// ANIMACION CONTACTO
+
+@keyframes contacto__aparece {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
     }
 }
