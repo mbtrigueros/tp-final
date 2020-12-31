@@ -1029,7 +1029,7 @@ textarea:hover {
   .galeria ul {
     display: grid;
     grid-template-columns: 25% 25% 5% 25%;
-    grid-template-rows: 30% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
     grid-row-gap: 0.5%;
     grid-column-gap: 0.5%;
   }
@@ -1104,9 +1104,10 @@ textarea:hover {
 @media screen and (max-width: 768px) {
   .modal {
     border-radius: 2%;
-    width: 80%;
-    height: auto;
-    margin-top: 50%;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
   }
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {
@@ -1213,7 +1214,7 @@ textarea:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 4%;
+    margin: 2%;
   }
 }
 
