@@ -831,8 +831,8 @@ textarea:hover {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto 5%;
-    grid-row-gap: 1%;
-    grid-column-gap: 1%;
+    grid-row-gap: 0%;
+    grid-column-gap: 0%;
     grid-template-areas: "head" "p" "foot";
   }
   .header__index {
@@ -853,8 +853,8 @@ textarea:hover {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto 12%;
-    grid-row-gap: 1%;
-    grid-column-gap: 1%;
+    grid-row-gap: 0%;
+    grid-column-gap: 0%;
   }
 }
 
