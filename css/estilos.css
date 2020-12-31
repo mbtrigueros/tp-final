@@ -1164,7 +1164,7 @@ textarea:hover {
     height: auto;
     position: absolute;
     top: 10vh;
-    right: 51vh;
+    right: 50vh;
     transform: rotate(180deg);
   }
 }
