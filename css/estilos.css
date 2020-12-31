@@ -915,14 +915,16 @@ textarea:hover {
 
 @media screen and (max-width: 992px) {
   .galeria ul {
-    grid-template-columns: 70vw;
-    grid-template-rows: repeat(8, 15%);
-    margin: 3%;
-    grid-gap: 1%;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(8, auto);
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+    margin: 1%;
     grid-template-areas: "i8" "i3" "i2" "i7" "i1" "i5" "i6" "i4";
   }
   .galeria ul .img8 {
-    margin-bottom: 100%;
+    margin-bottom: 40%;
   }
   .galeria ul .img1 {
     margin-top: -15%;

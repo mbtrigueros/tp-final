@@ -115,10 +115,8 @@ button {
 .galeria {
     @media screen and (max-width: 992px) {
         ul {
-                grid-template-columns: 70vw;
-                grid-template-rows: repeat(8, 15%);
-                margin: 3%;
-                grid-gap: 1%;
+            @include grid (80%, repeat(8, auto), 1%, 1%);
+                margin: 1%;
                 grid-template-areas: 
         "i8"
         "i3"
@@ -130,7 +128,7 @@ button {
         "i4"
         ;
             .img8 {
-                margin-bottom: 100%;
+                margin-bottom: 40%;
             }
             .img1 {
                 margin-top: -15%;
