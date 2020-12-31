@@ -2,44 +2,44 @@
 
 h1{
     a {
-    @media screen and (max-width: 992x) {
+    @media screen and (max-width: 768x) {
     font-size: $tmDestacadoMQ;
     }
 } } 
 
 .mb__header {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         display: block;
     }
 }
 
 .emebe__header {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 }
 
 
 h2 {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     font-size: $tmTitulosMQ;
     }
 }
 
 h3, h4, h5, h6 {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     font-size: $tmSubTitulosMQ;
     }
 }
 
 li {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     font-size: $tmTextosMQ;
     }
 }
 
 p {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     font-size: $tmTextosMQ;
     }
 }
@@ -47,7 +47,7 @@ p {
 nav {
     ul{
         li { 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     font-size: $tmTextosMQ;
     margin:1%;
             }
@@ -56,7 +56,7 @@ nav {
 }
 
 button {
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:768px) {
     padding: 1px;
     font-size: $tmTextosMQ;
     }
@@ -66,12 +66,15 @@ button {
 // INDEX
 
 .grid__index {
-    @media screen and (max-width:992px) {
-    @include grid(100%, auto auto 5%, 2.5%, 1%);
+    @media screen and (max-width:768px) {
+    @include grid(100%, auto auto 5%, 1%, 1%);
     grid-template-areas:
     "head"
     "p"
     "foot";
+    }
+    @media screen and (max-width:768px) and (orientation: landscape) {
+        @include grid(100%, auto auto 12%, 1%, 1%);
     }
 }
 
@@ -80,7 +83,7 @@ button {
 // INICIO
 
 .grid__inicio {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         height: 100vh;
         @include grid(100%, 10% auto auto 5%, 1%, 1%);
         grid-template-areas: 
@@ -97,23 +100,23 @@ button {
             }
         }
     }
+
+    @media screen and (max-width: 768px) and (orientation:landscape) {
+        @include grid(100%, 15% auto auto 12%, 1%, 1%);
+        .section__intro {
+            p {
+            margin:1%;
+            }
+        }
+    }
 }
 
 // ILUSTRACIONES
 
 // GALERIA
 
-.gri__ilustraciones {
-    @media screen and (max-width: 992px) {
-        @include grid(100%, 10% auto 5%, 1%, 1%);
-        grid-template-areas:
-        "header"
-        "galeria"
-        "footer";
-    }
-}
 .galeria {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         ul {
             @include grid (80%, repeat(8, auto), 1%, 1%);
                 margin: 3%;
@@ -128,7 +131,7 @@ button {
         "i4"
         ;
             .img8 {
-                margin-bottom: 100%;
+                margin-bottom: 40%;
             }
             .img1 {
                 margin-top: -15%;
@@ -136,12 +139,20 @@ button {
         }
     }
 
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+        ul {
+            @include grid (70%, repeat(8, auto), 1%, 1%);
+            .img8 {
+            margin-bottom: 40%;
+            }
+        }
+    }
 }
 
 // MODAL
 
 .modal {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     border-radius: 2%;
     width: 80%;
     height: auto;
@@ -150,7 +161,7 @@ button {
 }
 
 .modal__flecha-1 {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     color: $colorDestacado;
     width: 5%;
     height: auto;
@@ -161,7 +172,7 @@ button {
 }
 
 .modal__flecha-2 {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     color: $colorDestacado;
     width: 5%;
     height: auto;
@@ -173,7 +184,7 @@ button {
 }
 
 .modal__cerrar {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     color: $colorDestacado;
     width: 6%;
     height: auto;
@@ -186,7 +197,7 @@ button {
 // CONTACTO
 
 .grid__contacto {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
     @include grid(100%, 10% auto 5%, 1%, 1%);
     height: 100vh;
     grid-template-areas:
@@ -216,12 +227,15 @@ button {
             }
             
     }
+    @media screen and (max-width: 768px) and (orientation:landscape) {
+        @include grid(100%, 15% auto 12%, 1%, 1%);
+    }
 }
 
 // FOOTER
 
 footer {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         .footer__flex {
             position: relative;
         }
@@ -231,7 +245,7 @@ footer {
 // BIO
 
 .grid__bio {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         @include grid(100%, 10% auto auto auto auto auto 5%, 1%, 1%);
         grid-template-areas: 
         "header"
@@ -244,7 +258,16 @@ footer {
         .section__bio {
             margin: auto;
         }
+    }
 
+    @media screen and (max-width: 768px) and (orientation:landscape) {
+        @include grid(100%, 15% auto auto auto auto auto 12%, 1%, 1%);
+        .img__bio {
+            margin-top: 2%;
+        }
+        .section__desarrollo {
+            margin-bottom: 2%;
+        }
     }
 
 }
