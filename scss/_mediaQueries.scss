@@ -248,7 +248,7 @@ button {
 
 .grid__contacto {
     @media screen and (max-width: 768px) {
-    @include grid(100%, 10% auto 5%, 1%, 1%);
+    @include grid(100%, 10% auto 5%, 0%, 0%);
     height: 100vh;
     grid-template-areas:
         "header"
@@ -256,7 +256,7 @@ button {
         "footer";
         .contacto__cuadro {
             @include flex(column,center,center);
-            margin:3%;
+            margin:5%;
         }
         .contacto__flex {
             margin: 1%;

@@ -1094,8 +1094,8 @@ textarea:hover {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% auto 5%;
-    grid-row-gap: 1%;
-    grid-column-gap: 1%;
+    grid-row-gap: 0%;
+    grid-column-gap: 0%;
     height: 100vh;
     grid-template-areas: "header" "contacto" "footer";
   }
@@ -1104,7 +1104,7 @@ textarea:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3%;
+    margin: 5%;
   }
   .grid__contacto .contacto__flex {
     margin: 1%;
